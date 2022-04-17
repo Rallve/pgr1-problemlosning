@@ -11,7 +11,7 @@ public class Palindrom {
     static String palDrom(String s) {
         String comp1 = "";
         for (int i = 0; i < s.length(); i++) {
-            if (String.valueOf(s.charAt(i)).equals(" ")) {
+            if (String.valueOf(s.charAt(i)).equals(" ") || String.valueOf(s.charAt(i)).equals(",") || String.valueOf(s.charAt(i)).equals(".")) {
                 continue;
             } else {
                 comp1 += String.valueOf(s.charAt(i));
